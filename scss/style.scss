@@ -11,20 +11,25 @@ body {
 
 #team-members {
   clear: both;
-}
 
-#team-members .member {
+  .member {
   float: left;
-  /*border: 1px solid gray;*/
+  border-radius: 40px;
   margin: 10px;
   padding: 6px;
 
-  img {
-    width: 200px;
-    height: 200px;
-  }
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      border: 2px solid black;
+      -webkit-box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.75);
+      -moz-box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.75);
+      box-shadow: 10px 10px 34px -10px rgba(0,0,0,0.75);
+    }
 
-  div.name {
-  text-align: center;
+    div.name {
+    text-align: center;
+    }
   }
 }

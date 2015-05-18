@@ -6,16 +6,20 @@ body {
 
 #team-members {
   clear: both; }
-
-#team-members .member {
-  float: left;
-  /*border: 1px solid gray;*/
-  margin: 10px;
-  padding: 6px; }
-  #team-members .member img {
-    width: 200px;
-    height: 200px; }
-  #team-members .member div.name {
-    text-align: center; }
+  #team-members .member {
+    float: left;
+    border-radius: 40px;
+    margin: 10px;
+    padding: 6px; }
+    #team-members .member img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      border: 2px solid black;
+      -webkit-box-shadow: 10px 10px 34px -10px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 34px -10px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 34px -10px rgba(0, 0, 0, 0.75); }
+    #team-members .member div.name {
+      text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

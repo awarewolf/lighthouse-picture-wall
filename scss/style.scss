@@ -1,4 +1,17 @@
 $primaryColor: #FF0000;
+$transitionTime: 1s;
+$rotateFactor: -5deg;
+$scaleFactor: 1.05;
+$blurFactor: 5px;
+
+
+@mixin transitions {
+-webkit-transition: all $transitionTime ease;
+   -moz-transition: all $transitionTime ease;
+     -o-transition: all $transitionTime ease;
+    -ms-transition: all $transitionTime ease;
+        transition: all $transitionTime ease;
+}
 
 body {
   font-family: Verdana;
@@ -17,6 +30,34 @@ body {
   border-radius: 40px;
   margin: 10px;
   padding: 6px;
+
+    &:nth-of-type(odd) {
+
+      img {
+
+        @include transitions;
+
+        &:hover {
+        -webkit-transform: rotate($rotateFactor) scale($scaleFactor);
+           -moz-transform: rotate($rotateFactor) scale($scaleFactor);
+             -o-transform: rotate($rotateFactor) scale($scaleFactor);
+            -ms-transform: rotate($rotateFactor) scale($scaleFactor);
+                transform: rotate($rotateFactor) scale($scaleFactor);
+        }
+      }
+    }
+
+    &:nth-of-type(even) {
+
+      img {
+
+      @include transitions;
+
+        &:hover {
+        -webkit-filter: blur($blurFactor);
+        }
+      }
+    }
 
     img {
       width: 200px;

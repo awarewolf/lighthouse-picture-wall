@@ -11,6 +11,26 @@ body {
     border-radius: 40px;
     margin: 10px;
     padding: 6px; }
+    #team-members .member:nth-of-type(odd) img {
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease; }
+      #team-members .member:nth-of-type(odd) img:hover {
+        -webkit-transform: rotate(-5deg) scale(1.05);
+        -moz-transform: rotate(-5deg) scale(1.05);
+        -o-transform: rotate(-5deg) scale(1.05);
+        -ms-transform: rotate(-5deg) scale(1.05);
+        transform: rotate(-5deg) scale(1.05); }
+    #team-members .member:nth-of-type(even) img {
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease; }
+      #team-members .member:nth-of-type(even) img:hover {
+        -webkit-filter: blur(5px); }
     #team-members .member img {
       width: 200px;
       height: 200px;
